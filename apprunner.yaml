@@ -12,9 +12,9 @@ build:
       - which pnpm
     build: 
       - which pnpm
-      - pnpm run build
+      - /root/.local/share/pnpm/pnpm run build
 run:
-  command: pnpm run start
+  command: /root/.local/share/pnpm/pnpm run start
   network: 
     port: 5678
     env: PORT
