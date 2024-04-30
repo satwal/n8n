@@ -1,11 +1,13 @@
+#- pnpm install --frozen-lockfile
 version: 1.0
 runtime: nodejs18
 build:
   commands:
     pre-build:
-      - npm install -g pnpm
+      - npm install -g pnpm 
+      - npm prefix -g
+      - echo $PATH 
     build: 
-      - pnpm install --frozen-lockfile
       - pnpm run build
 run:
   command: pnpm run start
