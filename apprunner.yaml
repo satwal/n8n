@@ -10,7 +10,8 @@ build:
       - export PATH="$PNPM_HOME:$PATH"
       - echo $PATH
       - ls -l /root/.local/share/pnpm
-      - npm install
+      - ls -l .
+      - /root/.local/share/pnpm/pnpm install
     build:
       - /root/.local/share/pnpm/pnpm run build
 run:
