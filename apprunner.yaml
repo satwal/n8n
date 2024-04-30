@@ -6,7 +6,8 @@ build:
     pre-build:
       - npm install -g pnpm 
       - npm prefix -g
-      - echo $PATH 
+      - echo $PATH
+      - find / -name pnpm.cjs 
     build: 
       - pnpm run build
 run:
