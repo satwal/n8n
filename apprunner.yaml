@@ -9,9 +9,8 @@ build:
       - export PNPM_HOME="/root/.local/share/pnpm"
       - export PATH="$PNPM_HOME:$PATH"
       - echo $PATH
-      - which pnpm
-    build: 
-      - which pnpm
+      - ls -l /root/.local/share/pnpm
+    build:
       - /root/.local/share/pnpm/pnpm run build
 run:
   command: /root/.local/share/pnpm/pnpm run start
