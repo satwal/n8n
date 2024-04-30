@@ -5,9 +5,8 @@ build:
   commands:
     pre-build:
       - curl -fsSL https://get.pnpm.io/install.sh | sh -
-      - npm prefix -g
+      - source /root/.bashrc
       - echo $PATH
-      - find / -name pnpm.cjs 
     build: 
       - pnpm run build
 run:
