@@ -11,8 +11,8 @@
   "scripts": {
     "preinstall": "node scripts/block-npm-install.js",
     "build": "turbo run build",
-    "build:backend": "pnpm --filter=!@n8n/chat --filter=!n8n-design-system --filter=!n8n-editor-ui build",
-    "build:frontend": "pnpm --filter=@n8n/chat --filter=n8n-design-system --filter=n8n-editor-ui build",
+    "build:backend": "/root/.local/share/pnpm/pnpm --filter=!@n8n/chat --filter=!n8n-design-system --filter=!n8n-editor-ui build",
+    "build:frontend": "/root/.local/share/pnpm/pnpm --filter=@n8n/chat --filter=n8n-design-system --filter=n8n-editor-ui build",
     "typecheck": "turbo run typecheck",
     "dev": "turbo run dev --parallel --filter=!n8n-design-system --filter=!@n8n/chat",
     "dev:ai": "turbo run dev --parallel --filter=@n8n/nodes-langchain --filter=n8n --filter=n8n-core",
